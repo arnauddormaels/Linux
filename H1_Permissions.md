@@ -54,7 +54,9 @@ TIP** voor enkel de permissie te tonen van de directory `ls -ld dirTemp` anders 
 
 # Extra informatie
 
-/etc/shadow -> bevat de wachtwoorden van alle gebruikers (enkel de root kan deze openen)
+/etc/shadow -> bevat de wachtwoorden (encrypted) van alle gebruikers (enkel de root kan deze openen)
+
+/etc/shadow -> bevat de wachtwoorden (not encypted)
 
 `cat /etc/passwd` -> inhoud van het bestand afdrukken
 
@@ -74,12 +76,22 @@ TIP** voor enkel de permissie te tonen van de directory `ls -ld dirTemp` anders 
 | Toont bestand waar gebruikers worden bijghouden | `less /etc/passwd` of `vim /etc/passwd`(geeft hetzelfde maar met mooie kleurtjes, dit instaleren staat in colgende commando) |
 | instaleer vim | `sudo apt install vim`|
 | Toont alle groups (gebruiker wordt niet vermeld in zijn eigen primaire group vb user=bert group=bert dit kan je enkel zien in /etc/passwd)| `vim /etc/group` |
+| Primaire groep veranderen | `sudo usermod -g groepsken jan` |
+| groep veranderen, de gebruiker zit enkel in deze groepen vanaf nu | `sudo usermod -G groep1,groep2 jan`|
+| groep toevoegen aan de gebruiker | `sudo usermod -aG groep3 jan`|
+| Toont welke gebruiker je bent | `who`|
+| Toont tot welke groepen je behoort | `group`|
+| Geeft alle informatie over de gebgruiker| `id jan`|
+| Eigenaar van een file veranderen | `sudo chown jan bestand` |
+| Eigenaar en group aanpassen van een file| `sudo chown jan:groepsken bestand`|
+| Enkel group aanpassen | `chgrp groepsken bestand `|
+| inloggen als een andere gebruiker | `su - jan`|
+| uitloggen kan via 2 manieren | `logout` of CRTL D|
+| | |
+| Gebruiker correct aanmaken |
 | | |
 | | |
 | | |
-
-
-
 
 
 
