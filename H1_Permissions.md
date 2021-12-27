@@ -72,7 +72,7 @@ TIP** voor enkel de permissie te tonen van de directory `ls -ld dirTemp` anders 
 
 |Beschrijving| Commando |
 |---|---|
-|maakt een nieuwe gebruiker bert (moet met sudo want enkel de root kan gebruikers aanmaken)|`sudo adduser bert`|
+|maakt een nieuwe gebruiker bert (moet met sudo want enkel de root kan gebruikers aanmaken)|`sudo adduser bert` of `sudo useradd -mk /etc/skel bert` verschillende adduser commando's maar zelfde uitkomst|
 | Toont bestand waar gebruikers worden bijghouden | `less /etc/passwd` of `vim /etc/passwd`(geeft hetzelfde maar met mooie kleurtjes, dit instaleren staat in colgende commando) |
 | instaleer vim | `sudo apt install vim`|
 | Toont alle groups (gebruiker wordt niet vermeld in zijn eigen primaire group vb user=bert group=bert dit kan je enkel zien in /etc/passwd)| `vim /etc/group` |
@@ -88,8 +88,8 @@ TIP** voor enkel de permissie te tonen van de directory `ls -ld dirTemp` anders 
 | inloggen als een andere gebruiker | `su - jan`|
 | uitloggen kan via 2 manieren | `logout` of CRTL D|
 | | |
-| Gebruiker correct aanmaken |
-| ---|--- |
+| | |
+| | |
 | | |
 | | |
 
