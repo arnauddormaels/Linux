@@ -48,19 +48,38 @@ niet vergeten x moet aanstaan bij Others
 niet vergeten x moet aanstaan bij Others
 
 ## Restrcted deletion
-- Sticky bit `chmod +t` of via octale permissie `chmod 1777` (de 1 staat voor restricted deletion/de sticky bit).
+- Sticky bit 
 - Zo zou het eruit moeten zien ('t' is sticky bit)`drwxrwx rwt`
 - enkel de eigenaar kan bestanden verwijderen in deze directory.
-- 
+- commando `chmod +t` of `chmod 1777` (de 1 staat voor restricted deletion/de sticky bit).
+
 TIP** voor enkel de permissie te tonen van de directory `ls -ld dirTemp` anders zie je atlijd permissies van de files die in de directory zitten en niet die van de directory zelf. Je kan ook altijd naar de dir erboven gaan om dan de permissies van de temp dir te bekijken (als dat makkelijker is).
-
-
-
-
 
 
 # Extra informatie
 
 /etc/shadow -> bevat de wachtwoorden van alle gebruikers (enkel de root kan deze openen)
+
 cat -> inhoud van het bestand afdrukken
+
 touch -> maakt nieuw tekst bestand aan
+
+
+
+# Beheren van gebruikers 
+- users `useradd`, `usermod`, `userdel`
+- groups `groupadd`, `groupmod`, `groupdel`
+- Info opvragen `who`, `groups`,`id`
+
+|Beschrijving| Commando |
+|||
+
+
+
+
+
+
+
+
+
+
