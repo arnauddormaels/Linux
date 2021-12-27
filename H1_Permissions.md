@@ -1,9 +1,13 @@
 # Octale notatie
 
 r(read) = 4
+
 w(write) = 2
+
 x(excecute) = 1
+
 U(ser)-G(roup)-O(thers)
+
 a(all)
 
 
@@ -22,7 +26,7 @@ max octale notatie voor file is 777
 
 
 # Umask 
--> bepaalt de permissies van nieuwe bestanden/directories. De waarde van de umask bepaald welke permissies afgenomen worden (omgekeerde van de octale notatie). 
+Bepaalt de permissies van nieuwe bestanden/directories. De waarde van de umask bepaald welke permissies afgenomen worden (omgekeerde van de octale notatie). 
 Berekenen: max (666/777) - umask(vb 033) = nieuwe default permissie (744)
 
 
