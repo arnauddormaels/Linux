@@ -9,8 +9,8 @@ a(all)
 ## Commando's 
 | Beschrijving   |  code |
 |---|---|
-|Permissies toevoegen |  ```console    chmod + ... ```| 
-|   |   | 
+|Permissies toevoegen |  `   chmod g+rw `| 
+| Permissies afnemen  | `chmod g-rw`  | 
 |   |   | 
 
 
