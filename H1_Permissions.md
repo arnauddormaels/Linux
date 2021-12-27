@@ -89,9 +89,7 @@ TIP** voor enkel de permissie te tonen van de directory `ls -ld dirTemp` anders 
 | uitloggen kan via 2 manieren | `logout` of CRTL D|
 | deze file gaat bepalen wat iemand kan doen als root of als sudo |`sudo vim /etc/sudoers` |
 | Voeg gebruiker toe aan sudo group | `sudo usermod -aG sudo jan`|
-| | |
-| | |
-| | |
+
 
 
 
