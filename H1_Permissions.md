@@ -19,11 +19,7 @@ max octale notatie voor file is 777
 |Permissies toevoegen |  `   chmod g+rw `| 
 | Permissies afnemen  | `chmod g-rw`  | 
 | permissies overal hetzelfde maken  | `chmod a=r`  | 
-|||
-|||
-|||
-|||
-|||
+
 
 # Umask 
 -> bepaalt de permissies van nieuwe bestanden/directories. De waarde van de umask bepaald welke permissies afgenomen worden (omgekeerde van de octale notatie). 
@@ -72,8 +68,11 @@ touch -> maakt nieuw tekst bestand aan
 - Info opvragen `who`, `groups`,`id`
 
 |Beschrijving| Commando |
-|||
-
+|---|---|
+|maakt een nieuwe gebruiker bert|`sudo adduser bert`|
+| Toont bestand waar gebruikers worden bijghouden | `less /etc/passwd` of `vim /etc/passwd`(geeft hetzelfde maar met mooie kleurtjes, dit instaleren staat in colgende commando) |
+| instaleer vim | `sudo apt install vim`|
+| | |
 
 
 
