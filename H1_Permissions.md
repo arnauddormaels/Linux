@@ -12,6 +12,7 @@ a(all)
 
 
 voorbeeld `chmod 755 script.sh`
+
 Extra**  
 max octale notatie voor directory is 666 (een dir kan je niet excecuten)
 max octale notatie voor file is 777 
