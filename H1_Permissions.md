@@ -1,5 +1,5 @@
 ## Basis informatie
-###Octale notatie
+### Octale notatie
 r(read) = 4
 w(write) = 2
 x(excecute) = 1
@@ -7,7 +7,7 @@ U(ser)-G(roup)-O(thers)
 a(all)
 
 voorbeeld `chmod 755 script.sh`
-###normale permissie
+### normale permissie
 ## Commando's 
 
 | Beschrijving   |  code |
@@ -23,7 +23,4 @@ voorbeeld `chmod 755 script.sh`
 
 
 
-```console 
-ls -l
 
-```
