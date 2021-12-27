@@ -56,10 +56,11 @@ TIP** voor enkel de permissie te tonen van de directory `ls -ld dirTemp` anders 
 
 /etc/shadow -> bevat de wachtwoorden van alle gebruikers (enkel de root kan deze openen)
 
-cat -> inhoud van het bestand afdrukken
+`cat /etc/passwd` -> inhoud van het bestand afdrukken
 
-touch -> maakt nieuw tekst bestand aan
+`touch bestandTemp` -> maakt nieuw tekst bestand aan
 
+`sudo !!` -> gaat het vorige commando opnieuw uitvoeren (handig voor als je sudo was vergeten te typpen)
 
 
 # Beheren van gebruikers 
@@ -69,10 +70,15 @@ touch -> maakt nieuw tekst bestand aan
 
 |Beschrijving| Commando |
 |---|---|
-|maakt een nieuwe gebruiker bert|`sudo adduser bert`|
+|maakt een nieuwe gebruiker bert (moet met sudo want enkel de root kan gebruikers aanmaken)|`sudo adduser bert`|
 | Toont bestand waar gebruikers worden bijghouden | `less /etc/passwd` of `vim /etc/passwd`(geeft hetzelfde maar met mooie kleurtjes, dit instaleren staat in colgende commando) |
 | instaleer vim | `sudo apt install vim`|
+| Toont alle groups (gebruiker wordt niet vermeld in zijn eigen primaire group vb user=bert group=bert dit kan je enkel zien in /etc/passwd)| `vim /etc/group` |
 | | |
+| | |
+| | |
+
+
 
 
 
