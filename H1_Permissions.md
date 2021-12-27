@@ -9,7 +9,7 @@ a(all)
 ## Commando's 
 | Beschrijving   |  code |
 |---|---|
-|  |   | 
+|Permissies toevoegen |  ```console chmod + ... ```| 
 |   |   | 
 |   |   | 
 
