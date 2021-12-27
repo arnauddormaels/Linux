@@ -89,7 +89,7 @@ TIP** voor enkel de permissie te tonen van de directory `ls -ld dirTemp` anders 
 | uitloggen kan via 2 manieren | `logout` of CRTL D|
 | | |
 | Gebruiker correct aanmaken |
-| | |
+| ---|--- |
 | | |
 | | |
 
