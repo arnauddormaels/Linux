@@ -41,7 +41,7 @@ niet vergeten x moet aanstaan bij Others
 -Heeft dezelfde regels als de SUID 
 -Vervang de X bij de group permissies door een s `-rwx-rwsr-x`
 -Gebruiker krijgt zelfde rechten als de group van de eigenaar ook al zit deze niet in dezelfde group. 
--commando `chmod g+s`of `chmod 4777` (4 staat voor SGID)
+-commando `chmod g+s`of `chmod 4777` (4 staat voor SGID) 
 niet vergeten x moet aanstaan bij Others
 
 ## Restrcted deletion
