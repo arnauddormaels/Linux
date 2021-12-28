@@ -104,3 +104,10 @@ Zoek in een bestand naar alle regels die beginnen met een # (^ geeft aan in het 
 ```console 
 grep '^#' script.sh
 ```
+
+# I/O Redirections
+|beshcrijving | commando| mod|
+|---|---|---|
+|shcrijf uitvoer van cmd naar de file| `cmd > file`| `>>` :voeg toe aan einde van de file <br> `2>`: schrijf de foutboodschap weg naar de file <br> `<`: gebruik de inhoud van de file als invoer voor het commando|
+
+|gaat de files/directories zoeken adhv de parameters|`find `|
