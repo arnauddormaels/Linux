@@ -4,7 +4,7 @@ start script altijd met shebang
 
 Bash gebruiken
 ```sh
-#! /usr/bin/bash
+#!/usr/bin/bash
 
 echo "hello $[USER]"      
 # Enkele aanhalingstekens kan je ook gebruiken bij echo maar deze gaan dan $[USER] letterlijk afdrukken
@@ -15,7 +15,7 @@ printf 'Hello %s\n' "${var}"
 ```
 Python gebruiken
 ```sh
-#! bin/bash/python
+#!/bin/bash/python
 print ("Hello world")
 ```
 Variabelen in bash
