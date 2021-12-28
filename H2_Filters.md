@@ -106,7 +106,40 @@ grep '^#' script.sh
 ```
 
 # I/O Redirections
-|beshcrijving | commando| mod|
+| beshcrijving | commando| mod|
 |---|---|---|
-|shcrijf uitvoer van cmd naar de file| `cmd > file`| - `>>` :voeg toe aan einde van de file <br> - `2>`: schrijf de foutboodschap weg naar de file <br> - `<`: gebruik de inhoud van de file als invoer voor het commando|
-|gaat de files/directories zoeken adhv de parameters|`find / -type d`|- `/` zoeken vanaf de rood directory <br> -`-type d` geef de directories|
+| shcrijf uitvoer van cmd naar de file| `cmd > file`| - `>>` :voeg toe aan einde van de file <br> - `2>`: schrijf de foutboodschap weg naar de file <br> - `<`: gebruik de inhoud van de file als invoer voor het commando|
+| gebruikt de uitvoer van cmd1 als invoer van cmd 1, voorbeeld van een pipe|`cmd1 | cmd2`|
+| gaat de files/directories zoeken adhv de parameters|`find / -type d`|- `/` zoeken vanaf de rood directory <br> -`-type d` geef de directories|
+| Tekst wegschrijven als foutboodschap|`printf'Er is een foutje in dir %s' "${dir}" >&2`|
+
+
+## here document 
+handig voor meerdere lijnen te schrijven. Veel leesbaarder dan bv 10 echo's onder elkaar.
+Je kan hier ook bv sql code in schrijven voor het te gebruiken in een sql script.
+```console 
+cat << EOF
+de naam van de gebruiker is ${USER}
+zijn id is ${ID}
+EOF
+```
+
+# pipes
+
+instaleer onderstaande custom code 
+ 
+```console 
+sudo apt install fortune cowsay lolcat figlet
+```
+
+probeer deze eens uit en probeer wat leuke combinaties uit aan de hand van pipes |, zoals 
+``` echo ${USER| figlet
+fortune
+cowsay
+lolcat
+fortune | cowsay
+fortune | cowsay | lolcat
+```
+
+
+
