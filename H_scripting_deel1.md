@@ -42,7 +42,7 @@ variabelen zijn enkel te zien binnen de huidige omgeving en niet in de een subsh
 
 Globale/omgevingsvariabelen variabele maken kan je doen aan de hand van `export variabelken`
 
- **DETAILS Lokale variabelen worden geschreven in kleine letters. Omgeveringvariabelen worden geschreven in grote letters.
+ DETAIL** Lokale variabelen worden geschreven in kleine letters. Omgeveringvariabelen worden geschreven in grote letters.
 
 | Bescrijving| Commando|
 |---|---|
