@@ -38,7 +38,7 @@ dient om het zoekn en vervangen stukjes regels
 ```console 
 sed 's/aba/aka
 ```
-- s staat voor substitute
+- s staat voor substitute (vervangen)
 - het eerste deel "aba" gaan we zoeken in elke regel en vervangen door het 2e deel "aka", dit gaan we maar 1 keer doen per regel.
 
 ```console 
