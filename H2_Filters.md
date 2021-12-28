@@ -34,4 +34,6 @@ cmd | filter
 
 ## oefening 
 Toon welke commando's je het vaakst gebruikt (TOP10)  
-`history |awk '{ print $2}' | sort | uniq -c | sort -nr | head`
+```console 
+history |awk '{ print $2}' | sort | uniq -c | sort -nr | head`
+```
