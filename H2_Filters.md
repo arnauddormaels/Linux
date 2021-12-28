@@ -29,8 +29,34 @@ cmd | filter
 | tekst opmaak aanpassen | `fmt -w100 file`|`-w100` gaat de regels 100 karakters lang maken|
 | Gaat regelnummers toevoegen (enkel de regels waar tekst op staat, lege regels krijgen geen nummer)|`nl file`|
 | geeft het aantal regels, aantal woorden, aantal karakters in deze voglorde|`wc file`|`-w` geef enkel het andere woorden <br> `-c` karakcters <br> `-l` aantal lijnen|
-|zoeken naar tekstpatronen in een bestand, zoek naar bert in deze file|`grep bert /etc/passwd`|
+|zoeken naar tekstpatronen in een bestand, zoek naar bert in deze file|`grep bert /etc/passwd `| `-i` case insensetive zoeken|
+| Karakters systematisch omzetten naar andere karakters ,elk teken in het eerste deel wordt vervangen door het karakter in het 2e deel | `tr 'A-Z' 'a-z < UPPERCASE.txt > lowercase.txt`| het eerste > is voor iets parsing omdat je anders geen file zou kunnen doorgeven?<br> `-d [:punct:]` gaat alle dubbele punten,slashes en komma's verwijderen|
 
+
+## Sed commando
+dient om het zoekn en vervangen stukjes regels  
+```console 
+sed 's/aba/aka
+```
+- s staat voor substitute
+- het eerste deel "aba" gaan we zoeken in elke regel en vervangen door het 2e deel "aka", dit gaan we maar 1 keer doen per regel.
+
+```console 
+sed 's/aba/aka/g
+```
+- /g gaat ervoor zorgen dat we aba meerdere keren kunnen vervangen per regel
+
+```console 
+sed '/^#/d
+```
+- /d staat voor delete regel
+- ^ staat voor begin van de regel
+- we gaan elke regel die begint met een # verwijderen
+
+```console 
+sed '/^$/d'
+```
+- verwijder alle lege lijnen
 
 
 ## oefening 
