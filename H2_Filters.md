@@ -36,18 +36,18 @@ cmd | filter
 ## Sed commando
 dient om het zoekn en vervangen stukjes regels  
 ```console 
-sed 's/aba/aka
+sed 's/aba/aka'
 ```
 - s staat voor substitute (vervangen)
 - het eerste deel "aba" gaan we zoeken in elke regel en vervangen door het 2e deel "aka", dit gaan we maar 1 keer doen per regel.
 
 ```console 
-sed 's/aba/aka/g
+sed 's/aba/aka/g'
 ```
 - /g gaat ervoor zorgen dat we aba meerdere keren kunnen vervangen per regel
 
 ```console 
-sed '/^#/d
+sed '/^#/d'
 ```
 - /d staat voor delete regel
 - ^ staat voor begin van de regel
@@ -56,7 +56,9 @@ sed '/^#/d
 ```console 
 sed '/^$/d'
 ```
-- verwijder alle lege lijnen
+- $ staat voor het einde van de regel
+- dus als het begin van de regel en het einde van de regel na elkaar komen betekent dit dat de regel leeg is
+- verwijdert alle lege lijnen
 
 
 ## oefening 
