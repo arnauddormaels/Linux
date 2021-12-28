@@ -34,7 +34,7 @@ cmd | filter
 
 
 ## Sed commando
-dient om het zoekn en vervangen stukjes regels  
+sed dient om het zoekn en vervangen stukjes regels. En maakt gebruik van regex(handig om is op te zoeken voor beter te begrijpen wat je kunt doen met sed), reguliere expressies. 
 ```console 
 sed 's/aba/aka'
 ```
@@ -60,6 +60,34 @@ sed '/^$/d'
 - dus als het begin van de regel en het einde van de regel na elkaar komen betekent dit dat de regel leeg is
 - verwijdert alle lege lijnen
 
+## awk commando 
+Wat tussen de accolades staat wordt uitgevoerd op elke regel
+```console 
+awk '{ print $4} file'
+```
+- gaat de 4de kolom afdukken voor elke regel
+- kolommen worden gescheiden door witruimte
+
+```console 
+awk -F: '{ print $4} /etc/passwd'
+```
+- `-F:` aangeven dat de kolommen gescheiden zijn door ":"
+- gaat de 4e kolom afdrukken voor elke regel 
+
+```console 
+awk -F: '{ print $1 ":" $4} /etc/passwd'
+```
+- `-F:` aangeven dat de kolommen gescheiden zijn door ":"
+- gaat de 1e en 4 kolommen voor elke regel afdrukken gescheiden door een ":"
+
+```console 
+awk -F: ' /^b/ { print $1 ":" $4} /etc/passwd'
+```
+- print enkel de kolommen waarvan de regel begint met een b
+```console 
+awk -F: ' /bash$/ { print $1 ":" $4} /etc/passwd'
+```
+- print enkel de kolommen waarvan de regel eindigt op bash
 
 ## oefening 
 Toon welke commando's je het vaakst gebruikt (TOP10)  
