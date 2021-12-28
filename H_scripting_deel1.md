@@ -1,7 +1,7 @@
 # Scripting 
 ## basis
 start script altijd met shebang
-```shell
+```sh
 #! /usr/bin/bash
 
 
