@@ -1,7 +1,7 @@
 # Scripting 
 ## basis
 start script altijd met shebang
-```vim
+```console
 #! /usr/bin/bash
 
 
