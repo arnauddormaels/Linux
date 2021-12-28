@@ -7,8 +7,10 @@ Bash gebruiken
 #! /usr/bin/bash
 
 echo "hello $[USER]"      
-# Enkele aanhalingstekens kan je ook gebruiken maar deze gaan dan $[USER] letterlijk afdrukken
+# Enkele aanhalingstekens kan je ook gebruiken bij echo maar deze gaan dan $[USER] letterlijk afdrukken
 
+var="world"
+printf 'Hello %s\n' "${var}"
 ```
 Python gebruiken
 ```sh
