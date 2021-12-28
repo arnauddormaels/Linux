@@ -6,7 +6,8 @@ Bash gebruiken
 ```sh
 #! /usr/bin/bash
 
-echo "hello $[USER]"      # Enkele aanhalingstekens kan je ook gebruiken maar <br> deze gaan dan $[USER] letterlijk afdrukken
+echo "hello $[USER]"      # Enkele aanhalingstekens kan je ook gebruiken maar 
+deze gaan dan $[USER] letterlijk afdrukken
 
 ```
 Python gebruiken
