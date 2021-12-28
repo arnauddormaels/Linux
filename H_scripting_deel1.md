@@ -7,7 +7,7 @@ Bash gebruiken
 #! /usr/bin/bash
 
 echo "hello $[USER]"      # Enkele aanhalingstekens kan je ook gebruiken maar 
-deze gaan dan $[USER] letterlijk afdrukken
+#deze gaan dan $[USER] letterlijk afdrukken
 
 ```
 Python gebruiken
