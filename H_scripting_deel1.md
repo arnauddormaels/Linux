@@ -30,8 +30,7 @@ touch "${bestand}"  #altijd dubbele aanhalingstekeens gebruiken bij het oproeen 
  ## basic shelscript fouten opsporen
  ```sh
  
- set -o nounset       #foutmedling: x variebele is niet ingevuld maar wel gebruikt. deze gaat je verwittgen als er een vaiabele gebruikt wordt die niet bestaat, anders zou deze gwn een lege variabele gebruiken die niet gedefinieerd is
- 
+ set -o nounset      #foutmedling: x variebele is niet ingevuld maar wel gebruikt. deze gaat je verwittgen als er een vaiabele gebruikt wordt die niet bestaat, anders zou deze gwn een lege variabele gebruiken die niet gedefinieerd is  
  set -o errexit     # gaat het script stoppen vanaf dat er een commando faalt (exitstatus 0 = commando geslaagd)
  set -o pipefail    # gaat ervoor zorgen dat je beter kunt achterhalen waar je pipes fout zijn als je pipelines gebruikt
  
