@@ -89,6 +89,12 @@ awk -F: ' /bash$/ { print $1 ":" $4} /etc/passwd'
 ```
 - print enkel de kolommen waarvan de regel eindigt op bash
 
+```console 
+awk -F: ' { if ($3 > 1000) print $1 ":" $3} /etc/passwd'
+```
+- print enkel de lijnen waarvan kolom 3 groter is dan 1000
+
+
 ## oefening 
 Toon welke commando's je het vaakst gebruikt (TOP10)  
 ```console 
