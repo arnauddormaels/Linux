@@ -2,10 +2,11 @@
 ## basis
 start script altijd met shebang
 ```sh
-#! /usr/bin/bash
-
+#!/usr/bin/bash
 
 echo $[USER]
+
+
 ```
 
 
