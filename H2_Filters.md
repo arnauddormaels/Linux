@@ -29,6 +29,7 @@ cmd | filter
 | tekst opmaak aanpassen | `fmt -w100 file`|`-w100` gaat de regels 100 karakters lang maken|
 | Gaat regelnummers toevoegen (enkel de regels waar tekst op staat, lege regels krijgen geen nummer)|`nl file`|
 | geeft het aantal regels, aantal woorden, aantal karakters in deze voglorde|`wc file`|`-w` geef enkel het andere woorden <br> `-c` karakcters <br> `-l` aantal lijnen|
+|zoeken naar tekstpatronen in een bestand, zoek naar bert in deze file|`grep bert /etc/passwd`|
 
 
 
@@ -36,4 +37,8 @@ cmd | filter
 Toon welke commando's je het vaakst gebruikt (TOP10)  
 ```console 
 history |awk '{ print $2}' | sort | uniq -c | sort -nr | head`
+```
+Zoek in een bestand naar alle regels die beginnen met een # (^ geeft aan in het het begin van een regel)  
+```console 
+grep '^#' script.sh
 ```
