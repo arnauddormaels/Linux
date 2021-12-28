@@ -109,5 +109,4 @@ grep '^#' script.sh
 |beshcrijving | commando| mod|
 |---|---|---|
 |shcrijf uitvoer van cmd naar de file| `cmd > file`| `>>` :voeg toe aan einde van de file <br> `2>`: schrijf de foutboodschap weg naar de file <br> `<`: gebruik de inhoud van de file als invoer voor het commando|
-
-|gaat de files/directories zoeken adhv de parameters|`find `|
+|gaat de files/directories zoeken adhv de parameters|`find / -type d`|- `/` zoeken vanaf de rood directory <br> -`-type d` geef de directories|
